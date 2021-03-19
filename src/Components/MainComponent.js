@@ -19,7 +19,7 @@ class Main extends Component {
         return(
             <div>
                 <Header />
-
+                <Footer />
             </div>
         );
     }
