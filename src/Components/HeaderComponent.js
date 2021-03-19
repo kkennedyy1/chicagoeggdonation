@@ -49,9 +49,9 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar light sticky="top" expand="md">
+                <Navbar light sticky="top">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
+                    <NavbarBrand className="ml-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="Chicago Egg Donation Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
