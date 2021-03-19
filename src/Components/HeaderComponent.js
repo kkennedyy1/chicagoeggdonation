@@ -49,12 +49,20 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar light sticky="top">
+                <Navbar light sticky="top" expand="">
                     <div className="container">
-                    <NavbarBrand className="ml-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="Chicago Egg Donation Logo" /></NavbarBrand>
+                    <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/rainbow.png" height="30" width="60" alt="Chicago Egg Donation Logo" /></NavbarBrand>
+                    <span className="navbar-text ml-auto">
+                                <Button outline onClick={this.toggleModal}>
+                                    <i className="fa fa-sign-in fa-lg" /> Become a donor
+                                </Button>
+                                <Button outline onClick={this.toggleModal}>
+                                    <i className="fa fa-sign-in fa-lg" /> Search for a donor
+                                </Button>
+                    </span>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="align-items-end">
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
                                         <i className="fa fa-home fa-lg" /> Home
@@ -76,11 +84,6 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                             </Nav>
-                            <span className="navbar-text ml-auto">
-                                <Button outline onClick={this.toggleModal}>
-                                    <i className="fa fa-sign-in fa-lg" /> Login
-                                </Button>
-                            </span>
                         </Collapse>
                     </div>
                 </Navbar>
