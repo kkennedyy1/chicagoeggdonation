@@ -24,3 +24,6 @@
 .homebtn {
   margin-bottom: 1rem;
 }
+body {
+  background-color: rgb(241, 255, 50);
+}
