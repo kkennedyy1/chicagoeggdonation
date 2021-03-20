@@ -54,10 +54,10 @@ class Header extends Component {
                     <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/rainbow.png" height="30" width="60" alt="Chicago Egg Donation Logo" /></NavbarBrand>
                     <span className="navbar-text ml-auto">
                                 <Button outline onClick={this.toggleModal}>
-                                    <i className="fa fa-sign-in fa-lg" /> Become a donor
+                                    <i className="fa fa-sign-in fa-lg" /> Register!
                                 </Button>
                                 <Button outline onClick={this.toggleModal}>
-                                    <i className="fa fa-sign-in fa-lg" /> Search for a donor
+                                    <i className="fa fa-sign-in fa-lg" /> Login
                                 </Button>
                     </span>
                         <NavbarToggler onClick={this.toggleNav} />
