@@ -5,9 +5,15 @@
 .navbar {
   background-color:aquamarine;
 }
-.container {
-  border-style: dotted;
-  border-color: black;
+.site-footer {
+  background-color: aquamarine;
+}
+.container-fluid {
+ 
+}
+.row-fluid {
+   border-style: dotted;
+   border-color: black;
 }
 .homefind {
  background-color: aquamarine;
