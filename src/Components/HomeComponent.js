@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -13,7 +14,9 @@ function Home() {
             <div className="row">
                 <div className="col-md-6 text-center my-3 homefind">
                     <p>Ipsum cillum laboris velit velit enim Lorem laboris aliqua. Proident consectetur irure anim mollit aute minim. Et proident elit sint reprehenderit non quis tempor magna reprehenderit. Aute sunt proident pariatur consectetur laborum pariatur dolor. Pariatur ullamco aute laboris adipisicing dolore quis. Ex consequat pariatur nulla nostrud amet tempor ut officia ea adipisicing occaecat eu enim excepteur.</p>
-                    <Button className="homebtn">Find a Donor</Button>
+                    <Link to="/findadonor">
+                        <Button className="homebtn">Find a Donor</Button>
+                    </Link>
                 </div>
                 <div className="col-md-6 text-center my-3 homebecome">
                     <p>Ut adipisicing esse cupidatat culpa sint labore aliqua. Voluptate incididunt magna do duis. Anim excepteur quis enim exercitation aliqua consectetur labore ipsum excepteur. Deserunt ullamco dolor incididunt eiusmod. Velit incididunt ea Lorem esse nostrud nulla aliquip ad pariatur.</p>
