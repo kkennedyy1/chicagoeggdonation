@@ -2,13 +2,16 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+
 function Home() {
     return (
         <div className="container">
             <div className="row">
                 <div className="col text-center my-3">
                     <p>Aliquip anim occaecat irure elit ullamco velit culpa culpa nostrud adipisicing. Eiusmod culpa voluptate eiusmod minim dolor ex duis enim et cillum veniam. Veniam velit dolor velit pariatur occaecat culpa.</p>
-                    <Button className="homebtn"> About Us</Button>
+                    <Link to="/aboutus">
+                        <Button className="homebtn"> About Us</Button>
+                    </Link>
                 </div>
             </div>
             <div className="row">

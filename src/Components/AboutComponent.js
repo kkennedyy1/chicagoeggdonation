@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import GoogleMapReact from 'google-map-react';
 
+const MyMapComponent = ({ text }) => <div>{text}</div>;
 
-function About() {
-    return (
+class About extends Component {
+    static defaultProps = {
+        center: {
+            lat: 41.8781,
+            lng: -87.6298
+        },
+        zoom: 8
+    };
+
+    render() {
+        return (
         <div className="container">
             <div className="row">
                 <div className="col text-center my-3">
@@ -13,8 +24,18 @@ function About() {
                 </div>
             </div>
             <div className="row">
-                <div className="col text-center my-3">
-                    <p>In this single column, which is inside a single row, I would like to embed a Google Map which allows you to zoom in on our location in downtown</p>
+                <div className="col text-center my-3" style={{ height: '75vh', width: '75%' }}>
+                    <GoogleMapReact
+                        bootstrapURLKeys={{ key: "AIzaSyBcmSxBHCXBZXMjKwR-rlIFQy_RcCjDQPc"}}
+                        defaultCenter={this.props.center}
+                        defaultZoom={this.props.zoom}
+                        >
+                        <MyMapComponent
+                            lat={41.8781}
+                            lng={-87.6298}
+                            text="My Marker"
+                        />
+                    </GoogleMapReact>
                     <Button className="homebtn"> Location</Button>
                 </div>
             </div>
@@ -25,7 +46,8 @@ function About() {
                 </div>
             </div>
         </div>
-    );
+        );
+    };
 }
 
 export default About;
