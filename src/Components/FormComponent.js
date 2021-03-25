@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
 import {
-    Breadcrumb, BreadcrumbItem,
     Button, Form, FormGroup, Label, Input, Col
 } from 'reactstrap';
 
@@ -92,7 +91,7 @@ class Forms extends Component {
         return (
             <div className="row row-content justify-content-center">
                 <div className="col-8">
-                    <h2>Send us your Feedback</h2>
+                    <h2>Let's get you started!</h2>
                     <hr />
                 </div>
                 <div className="col-md-8">
@@ -105,8 +104,7 @@ class Forms extends Component {
                                     value={this.state.firstName}
                                     onChange={this.handleInputChange}
                                     invalid={errors.firstName}
-                                    onBlur={this.handleBlur("firstName")}
-                                    onChange={this.handleInputChange} />
+                                    onBlur={this.handleBlur("firstName")} />
                             </Col>
                         </FormGroup>
                         <FormGroup row>
@@ -117,8 +115,7 @@ class Forms extends Component {
                                     value={this.state.lastName}
                                     onChange={this.handleInputChange}
                                     invalid={errors.lastName}
-                                    onBlur={this.handleBlur("lastName")}
-                                    onChange={this.handleInputChange} />
+                                    onBlur={this.handleBlur("lastName")}/>
                             </Col>
                         </FormGroup>
                         <FormGroup row>
@@ -129,8 +126,7 @@ class Forms extends Component {
                                     value={this.state.phoneNum}
                                     onChange={this.handleInputChange} 
                                     invalid={errors.phoneNum}
-                                    onBlur={this.handleBlur("phoneNum")}
-                                    onChange={this.handleInputChange} />
+                                    onBlur={this.handleBlur("phoneNum")}/>
                             </Col>
                         </FormGroup>
                         <FormGroup row>
@@ -141,8 +137,7 @@ class Forms extends Component {
                                     value={this.state.email}
                                     onChange={this.handleInputChange}
                                     invalid={errors.email}
-                                    onBlur={this.handleBlur("email")}
-                                    onChange={this.handleInputChange} /> 
+                                    onBlur={this.handleBlur("email")}/> 
                             </Col>
                         </FormGroup>
                         <FormGroup row>
