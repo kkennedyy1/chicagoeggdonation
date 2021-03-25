@@ -28,7 +28,7 @@ class FindADonor extends Component {
         return <div />;
     }
     render() {
-        const findadonor = this.props.donors.map(donor => {
+        const findadonor = this.props.donor.map(donor => {
             return (
                 <div key={donor.id} className="col-md-5 m-1">
                     <Card onClick={() => this.onDonorSelect(donor)}>

@@ -5,7 +5,7 @@ import About from './AboutComponent';
 import FindADonor from './FindADonorComponent';
 import Forms from './FormComponent';
 import Footer from './FooterComponent';
-import { DONORS } from '../shared/donors';
+import { DONORS } from '../shared/Donors';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
 class Main extends Component {
@@ -23,7 +23,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route exact path='/aboutus' component={About} />
-                    <Route path='/findadonor' render={() => <FindADonor donors={this.props.donors} />} />
+                    <Route path='/findadonor' render={() => <FindADonor donor={this.state.donors} />} />
                     <Route exact path='/forms' component={Forms} />
                     <Redirect to='/home' />  
                 </Switch>
