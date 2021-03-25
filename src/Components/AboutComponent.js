@@ -24,7 +24,7 @@ class About extends Component {
                 </div>
             </div>
             <div className="row">
-                <div className="col text-center my-3" style={{ height: '100vh', width: '100%' }}>
+                <div className="col text-center my-3" style={{ height: '75vh', width: '75%' }}>
                     <GoogleMapReact
                         bootstrapURLKeys={{ key: "AIzaSyBcmSxBHCXBZXMjKwR-rlIFQy_RcCjDQPc"}}
                         defaultCenter={this.props.center}
