@@ -6,13 +6,15 @@ import FindADonor from './FindADonorComponent';
 import Forms from './FormComponent';
 import Footer from './FooterComponent';
 import { DONORS } from '../shared/Donors';
+import { FAMILYPICS } from '../shared/Carousel';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props){
         super(props);
         this.state = {
-            donors: DONORS
+            donors: DONORS,
+            familypics: FAMILYPICS
         };
     }
 
@@ -21,7 +23,7 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route path='/home' component={Home} />
+                    <Route path='/home' render={() => <Home items={this.state.familypics} />} />
                     <Route exact path='/aboutus' component={About} />
                     <Route path='/findadonor' render={() => <FindADonor donor={this.state.donors} />} />
                     <Route exact path='/forms' component={Forms} />

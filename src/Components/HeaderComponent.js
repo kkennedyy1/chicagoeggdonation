@@ -49,12 +49,12 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar light sticky="top" expand="">
+                <Navbar light sticky="top" expand="md">
                     <div className="container">
                     <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/rainbow.png" height="30" width="60" alt="Chicago Egg Donation Logo" /></NavbarBrand>
-                    <span className="navbar-text ml-auto">
-                                <Link outline className="btn btn-outline-secondary" to="/forms">
-                                    <i className="fa fa-user-plus fa-lg" /> Register!
+                    <span className="navbar-text ml-auto order-md-last">
+                                <Link to="/forms">
+                                    <Button outline><i className="fa fa-user-plus fa-lg" /> Register!</Button>
                                 </Link>
                                 <Button outline onClick={this.toggleModal}>
                                     <i className="fa fa-sign-in fa-lg" /> Login
