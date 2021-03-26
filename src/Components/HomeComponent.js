@@ -11,7 +11,7 @@ function Home() {
                 <UncontrolledCarousel className="w-50 mx-auto mycarousel" items={FAMILYPICS}/>
             </div>
             <div className="row">
-                <div className="col text-center my-3">
+                <div className="col text-center my-3 homeabout">
                     <p>Aliquip anim occaecat irure elit ullamco velit culpa culpa nostrud adipisicing. Eiusmod culpa voluptate eiusmod minim dolor ex duis enim et cillum veniam. Veniam velit dolor velit pariatur occaecat culpa.</p>
                     <Link to="/aboutus">
                         <Button className="homebtn"> About Us</Button>
@@ -33,9 +33,11 @@ function Home() {
                 </div>
             </div>
             <div className="row">
-                <div className="col text-center my-3">
+                <div className="col text-center my-3 homecontact">
                     <p>Irure dolore aliquip esse minim tempor proident fugiat irure. Nisi elit do sit ad tempor do exercitation. Ea reprehenderit consequat quis mollit magna minim voluptate. Veniam ea velit ad veniam eu velit fugiat. Minim et Lorem aliqua velit. Nostrud aute proident nisi laborum eiusmod duis duis do incididunt officia.</p>
-                    <Button className="homebtn"> Contact Us</Button>
+                    <Link to="/forms">
+                        <Button className="homebtn"> Contact Us</Button>
+                    </Link>
                 </div>
             </div>
         </div>

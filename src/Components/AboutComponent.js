@@ -18,7 +18,7 @@ class About extends Component {
         return (
         <div className="container">
             <div className="row">
-                <div className="col text-center my-3">
+                <div className="col text-center my-3 homeabout">
                     <p>Ipsum cillum laboris velit velit enim Lorem laboris aliqua. Proident consectetur irure anim mollit aute minim. Et proident elit sint reprehenderit non quis tempor magna reprehenderit. Aute sunt proident pariatur consectetur laborum pariatur dolor. Pariatur ullamco aute laboris adipisicing dolore quis. Ex consequat pariatur nulla nostrud amet tempor ut officia ea adipisicing occaecat eu enim excepteur.</p>
                     <Button className="homebtn">Mission</Button>
                 </div>
@@ -36,11 +36,10 @@ class About extends Component {
                             text="My Marker"
                         />
                     </GoogleMapReact>
-                    <Button className="homebtn"> Location</Button>
                 </div>
             </div>
             <div className="row">
-                <div className="col text-center my-3">
+                <div className="col text-center my-3 homecontact">
                     <p>Irure dolore aliquip esse minim tempor proident fugiat irure. Nisi elit do sit ad tempor do exercitation. Ea reprehenderit consequat quis mollit magna minim voluptate. Veniam ea velit ad veniam eu velit fugiat. Minim et Lorem aliqua velit. Nostrud aute proident nisi laborum eiusmod duis duis do incididunt officia.</p>
                     <Button className="homebtn"> Contact Us</Button>
                 </div>

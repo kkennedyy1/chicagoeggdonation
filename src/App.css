@@ -5,15 +5,21 @@
 .navbar {
   background-color:aquamarine;
 }
+.btn:hover {
+  background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue,indigo,violet);
+}
 .site-footer {
   background-color: aquamarine;
 }
-.container-fluid {
- 
+#social {
+  background-color: aquamarine;
 }
 .row-fluid {
    border-style: dotted;
    border-color: black;
+}
+.homeabout {
+  background-color: thistle;
 }
 .homefind {
  background-color: aquamarine;
@@ -24,7 +30,18 @@
 .homebtn {
   margin-bottom: 1rem;
 }
+.homecontact {
+  background-color: salmon;
+}
 body {
   background-color: rgb(241, 255, 50);
 }
+
+.cardtitle {
+  background:#ffffff;
+  color: black;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
 

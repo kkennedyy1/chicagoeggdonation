@@ -19,8 +19,9 @@ class FindADonor extends Component {
             return (
                 <Card>                    
                     <CardBody>
-                        <CardTitle><h4>{donor.name}</h4></CardTitle>
+                        <CardTitle><h4>{donor.name}, {donor.age}</h4></CardTitle>
                         <CardImg top src={donor.image} alt={donor.name} />
+                        <CardText><h3>{donor.description}</h3></CardText>
                     </CardBody>
                 </Card>
             );
@@ -30,11 +31,11 @@ class FindADonor extends Component {
     render() {
         const findadonor = this.props.donor.map(donor => {
             return (
-                <div key={donor.id} className="col-md-5 m-1">
+                <div key={donor.id} className="col-md-3 m-1">
                     <Card onClick={() => this.onDonorSelect(donor)}>
-                        <CardImg width="100%" src={donor.image} alt={donor.name} />
+                        <CardImg width="100%" height="auto" src={donor.image} alt={donor.name} />
                         <CardImgOverlay>
-                            <CardTitle><h4>{donor.name}</h4></CardTitle>
+                            <CardTitle><h4 className="cardtitle">{donor.name}, {donor.age}</h4></CardTitle>
                         </CardImgOverlay>
                     </Card>
                 </div>
