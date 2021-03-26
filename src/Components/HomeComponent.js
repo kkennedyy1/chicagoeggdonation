@@ -1,11 +1,15 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, UncontrolledCarousel } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { FAMILYPICS } from '../shared/Carousel';
 
 
 function Home() {
     return (
         <div className="container">
+            <div className="row my-3 d-block">
+                <UncontrolledCarousel className="w-50 mx-auto mycarousel" items={FAMILYPICS}/>
+            </div>
             <div className="row">
                 <div className="col text-center my-3">
                     <p>Aliquip anim occaecat irure elit ullamco velit culpa culpa nostrud adipisicing. Eiusmod culpa voluptate eiusmod minim dolor ex duis enim et cillum veniam. Veniam velit dolor velit pariatur occaecat culpa.</p>
