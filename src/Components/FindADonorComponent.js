@@ -17,10 +17,10 @@ class FindADonor extends Component {
     renderSelectedDonor(donor) {
         if (donor) {
             return (
-                <Card>
-                    <CardImg top src={donor.image} alt={donor.name} />
+                <Card>                    
                     <CardBody>
-                        <CardTitle>{donor.name}</CardTitle>
+                        <CardTitle><h4>{donor.name}</h4></CardTitle>
+                        <CardImg top src={donor.image} alt={donor.name} />
                     </CardBody>
                 </Card>
             );
@@ -34,7 +34,7 @@ class FindADonor extends Component {
                     <Card onClick={() => this.onDonorSelect(donor)}>
                         <CardImg width="100%" src={donor.image} alt={donor.name} />
                         <CardImgOverlay>
-                            <CardTitle>{donor.name}</CardTitle>
+                            <CardTitle><h4>{donor.name}</h4></CardTitle>
                         </CardImgOverlay>
                     </Card>
                 </div>

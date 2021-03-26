@@ -23,7 +23,9 @@ function Home() {
                 </div>
                 <div className="col-md-6 text-center my-3 homebecome">
                     <p>Ut adipisicing esse cupidatat culpa sint labore aliqua. Voluptate incididunt magna do duis. Anim excepteur quis enim exercitation aliqua consectetur labore ipsum excepteur. Deserunt ullamco dolor incididunt eiusmod. Velit incididunt ea Lorem esse nostrud nulla aliquip ad pariatur.</p>
-                    <Button className="homebtn"> Become a Donor</Button>
+                    <Link to="/forms">
+                        <Button className="homebtn"> Become a Donor</Button>
+                    </Link>
                 </div>
             </div>
             <div className="row">
