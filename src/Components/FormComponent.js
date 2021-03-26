@@ -90,11 +90,11 @@ class Forms extends Component {
         const errors = this.validate(this.state.firstName, this.state.lastName, this.state.phoneNum, this.state.email);    
         return (
             <div className="row row-content justify-content-center">
-                <div className="col-8">
+                <div className="col-12 text-center">
                     <h2>Let's get you started!</h2>
                     <hr />
                 </div>
-                <div className="col-md-8">
+                <div className="col-8 col-lg-6">
                     <Form onSubmit={this.handleSubmit}>
                         <FormGroup row>
                             <Label htmlFor="firstName" md={2}>First Name</Label>
@@ -146,8 +146,9 @@ class Forms extends Component {
                                 <Input type="select" name="contactType"
                                     value={this.state.contactType}
                                     onChange={this.handleInputChange}>
-                                    <option>a donor</option>
-                                    <option>searching for a donor</option>
+                                    <option disabled> Select "egg donor" or "searching for a donor"</option>
+                                    <option>egg donor</option>
+                                    <option>searching for egg donor</option>
                                 </Input>
                                 <FormGroup check>
                                         <Label check>
@@ -163,7 +164,7 @@ class Forms extends Component {
 
                         <FormGroup row>
                             <Col md={{ size: 10, offset: 2 }}>
-                                <Button type="submit" color="primary">
+                                <Button type="submit" color="primary" className="float:center">
                                     Submit
                             </Button>
                             </Col>

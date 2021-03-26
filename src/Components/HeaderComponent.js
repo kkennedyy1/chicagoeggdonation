@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron,
-    Button, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, Form} from 'reactstrap';
+    Button, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, Form } from 'reactstrap';
 import { NavLink, Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -54,7 +54,7 @@ class Header extends Component {
                     <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/rainbow.png" height="30" width="60" alt="Chicago Egg Donation Logo" /></NavbarBrand>
                     <span className="navbar-text ml-auto order-md-last">
                                 <Link to="/forms">
-                                    <Button outline><i className="fa fa-user-plus fa-lg" /> Register!</Button>
+                                    <Button outline><i className="fa fa-user-plus fa-lg" /> Register</Button>
                                 </Link>
                                 <Button outline onClick={this.toggleModal}>
                                     <i className="fa fa-sign-in fa-lg" /> Login
@@ -69,8 +69,8 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="">
-                                        <i className="fa fa-list fa-lg" /> Directory
+                                    <NavLink className="nav-link" to="/findadonor">
+                                        <i className="fa fa-list fa-lg" /> Donor List
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -79,7 +79,7 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="">
+                                    <NavLink className="nav-link" to="/forms">
                                         <i className="fa fa-address-card fa-lg" /> Contact Us
                                     </NavLink>
                                 </NavItem>
@@ -94,12 +94,12 @@ class Header extends Component {
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>
                                 <Label htmlFor="username">Username</Label>
-                                <Input type="text" id="username" name="username"
+                                <Input type="text" id="username" name="username" placeholder="Username"
                                     innerRef={input => this.username = input} />
                             </FormGroup>
                             <FormGroup>
                                 <Label htmlFor="password">Password</Label>
-                                <Input type="password" id="password" name="password"
+                                <Input type="password" id="password" name="password" placeholder="Password"
                                     innerRef={input => this.password = input} />
                             </FormGroup>
                             <FormGroup check>
