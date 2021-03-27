@@ -8,6 +8,9 @@
 .btn:hover {
   background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue,indigo,violet);
 }
+.btn-donor {
+  background-color: thistle;
+}
 .site-footer {
   background-image: linear-gradient(to bottom, aquamarine, yellow);
 }
