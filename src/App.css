@@ -9,7 +9,7 @@
   background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue,indigo,violet);
 }
 .site-footer {
-  background-color: aquamarine;
+  background-image: linear-gradient(to bottom, aquamarine, yellow);
 }
 #social {
   background-color: aquamarine;
