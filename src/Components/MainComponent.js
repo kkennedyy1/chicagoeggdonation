@@ -23,7 +23,7 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route path='/home' render={() => <Home items={this.state.familypics} />} />
+                    <Route path='/home' render={() => <Home family={this.state.familypics} />} />
                     <Route exact path='/aboutus' component={About} />
                     <Route path='/findadonor' render={() => <FindADonor donor={this.state.donors} />} />
                     <Route exact path='/forms' component={Forms} />

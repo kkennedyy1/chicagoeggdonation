@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button, UncontrolledCarousel } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { FAMILYPICS } from '../shared/Carousel';
 
 
-function Home() {
+function Home({family}) {
+    if(family){
     return (
         <div className="container">
             <div className="row my-3 d-block">
-                <UncontrolledCarousel className="w-50 mx-auto mycarousel" items={FAMILYPICS}/>
+                <UncontrolledCarousel className="w-50 mx-auto mycarousel" items={family}/>
             </div>
             <div className="row">
                 <div className="col text-center my-3 homeabout">
@@ -42,6 +42,7 @@ function Home() {
             </div>
         </div>
     );
+    }
 }
 
 export default Home;
