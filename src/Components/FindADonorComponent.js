@@ -28,11 +28,11 @@ class FindADonor extends Component {
             return (
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalBody>
-                        <Card>                    
+                        <Card className="selDonorCard">                    
                             <CardBody>
                                 <CardTitle><h4>{donor.name}, {donor.age}</h4></CardTitle>
                                 <CardImg top src={donor.image} alt={donor.name} />
-                                <CardText><h3>{donor.description}</h3></CardText>
+                                <CardText className="pt-3"><h3>{donor.description}</h3></CardText>
                             </CardBody>
                         </Card>
                     </ModalBody>

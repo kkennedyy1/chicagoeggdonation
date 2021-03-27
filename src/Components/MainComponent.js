@@ -26,7 +26,7 @@ class Main extends Component {
                     <Route path='/home' render={() => <Home family={this.state.familypics} />} />
                     <Route exact path='/aboutus' component={About} />
                     <Route path='/findadonor' render={() => <FindADonor donor={this.state.donors} />} />
-                    <Route exact path='/forms' component={Forms} />
+y                    <Route exact path='/forms' component={Forms} />
                     <Redirect to='/home' />  
                 </Switch>
                 <Footer />
